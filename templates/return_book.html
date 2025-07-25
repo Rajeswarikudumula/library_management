@@ -1,0 +1,9 @@
+<h2>Return Book</h2>
+<form method="POST">
+    <select name="issued_id">
+        {% for item in issued_books %}
+        <option value="{{ item[0] }}">{{ item[1] }} (Issued to {{ item[2] }}) - Due: {{ item[3] }}</option>
+        {% endfor %}
+    </select>
+    <input type="submit" value="Return">
+</form>

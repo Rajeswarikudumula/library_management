@@ -1,0 +1,7 @@
+<h2>Members</h2>
+<a href="/add_member">Add Member</a>
+<ul>
+{% for member in members %}
+    <li>{{ member[1] }} ({{ member[2] }})</li>
+{% endfor %}
+</ul>

@@ -1,0 +1,7 @@
+<h2>Books</h2>
+<a href="/add_book">Add Book</a>
+<ul>
+{% for book in books %}
+    <li>{{ book[1] }} by {{ book[2] }} - {% if book[3] == 1 %}Available{% else %}Issued{% endif %}</li>
+{% endfor %}
+</ul>
